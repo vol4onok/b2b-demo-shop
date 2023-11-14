@@ -97,4 +97,17 @@ class CustomerConfig extends SprykerCustomerConfig
     {
         return true;
     }
+
+    /**
+     * Specification:
+     * - Provides a prefix used during customer reference generation.
+     *
+     * @api
+     *
+     * @return string|null
+     */
+    public function getCustomerSequenceNumberPrefix(): ?string
+    {
+        return 'customer';
+    }
 }
