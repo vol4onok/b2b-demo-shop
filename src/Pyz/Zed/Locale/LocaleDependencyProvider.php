@@ -16,7 +16,7 @@ class LocaleDependencyProvider extends SprykerLocaleDependencyProvider
     /**
      * @return \Spryker\Shared\LocaleExtension\Dependency\Plugin\LocalePluginInterface
      */
-    protected function getLocalePlugin(): LocalePluginInterface
+    protected function getLocalePlugin(): LocalePluginInterface1
     {
         return new UserLocaleLocalePlugin();
     }
