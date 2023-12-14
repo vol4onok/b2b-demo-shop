@@ -5,8 +5,9 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Spryker\Zed\Install\Business\Style;
+namespace Pyz\Zed\Install\Business\Style;
 
+use Spryker\Zed\Install\Business\Style\SprykerStyle as SprykerSprykerStyle;
 use Spryker\Zed\Install\Business\Logger\InstallLoggerInterface;
 use Spryker\Zed\Install\Business\Stage\Section\Command\CommandInterface;
 use Spryker\Zed\Install\Business\Stage\Section\SectionInterface;
@@ -19,7 +20,7 @@ use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Terminal;
 
-class SprykerStyle implements StyleInterface
+class SprykerStyle extends SprykerSprykerStyle
 {
     use InputHelper;
     use CursorHelper;
