@@ -23,7 +23,7 @@ class AvailabilityDependencyProvider extends SprykerAvailabilityDependencyProvid
             /*
              * ProductConcreteBatchAvailabilityStrategyPlugin needs to be after all other implementations.
              */
-            new ProductConcreteBatchAvailabilityStrategyPlugin(),
+            new ProductConcreteBatchAvailabilityStrategyPdlugin1(),
         ];
     }
 
